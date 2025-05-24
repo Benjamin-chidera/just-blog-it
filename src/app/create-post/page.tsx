@@ -22,8 +22,12 @@ const CreatePost = () => {
           <h1 className=" font-bold text-2xl">Create Post</h1>
 
           <div className="flex items-center gap-5">
-            <Button className="bg-primaryColor" type="button">Preview your post</Button>
-            <Button className="bg-primaryColor" type="submit">Publish your post</Button>
+            <Button size={"sm"} className="bg-primaryColor" type="button">
+              Preview your post
+            </Button>
+            <Button size={"sm"} className="bg-primaryColor" type="submit">
+              Publish your post
+            </Button>
           </div>
         </div>
 
@@ -58,7 +62,13 @@ const CreatePost = () => {
               {/* list of categories */}
 
               {categories.map((cat, i) => (
-                <Button key={i} name={cat.name} type="button" className="bg-primaryColor"> 
+                <Button
+                  key={i}
+                  name={cat.name}
+                  type="button"
+                  className="bg-primaryColor"
+                  size={"sm"}
+                >
                   {cat.name}
                 </Button>
               ))}
@@ -72,6 +82,7 @@ const CreatePost = () => {
               <Button
                 className="w-full rounded-none absolute bottom-0 bg-primaryColor"
                 type="button"
+                size={"sm"}
               >
                 <Bot />
                 Enhance with AI

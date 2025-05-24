@@ -1,10 +1,14 @@
+"use client"
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export const Navbar = () => {
+  const router = useRouter();
   return (
     <main className=" flex items-center justify-between w-9/12 mx-auto py-5">
       <div>
@@ -20,7 +24,11 @@ export const Navbar = () => {
       </div>
 
       <div className=" flex items-center gap-5">
-        <Button className=" bg-primaryColor font-bold">
+        <Button
+          className=" bg-primaryColor font-bold"
+          size={"sm"}
+          onClick={() => router.push("/create-post")}
+        >
           <Plus />
           Create Post
         </Button>
