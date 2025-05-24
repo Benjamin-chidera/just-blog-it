@@ -18,10 +18,10 @@ const CreatePost = () => {
   return (
     <main>
       <form action="">
-        <div className="flex items-center justify-between">
+        <div className="md:flex items-center justify-between">
           <h1 className=" font-bold text-2xl">Create Post</h1>
 
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 mt-3 md:mt-0">
             <Button size={"sm"} className="bg-primaryColor" type="button">
               Preview your post
             </Button>
@@ -31,7 +31,7 @@ const CreatePost = () => {
           </div>
         </div>
 
-        <section className="mt-6 flex justify-between gap-10">
+        <section className="mt-6 lg:flex justify-between gap-10">
           <section className=" flex-1">
             <Input
               type="text"
@@ -75,7 +75,7 @@ const CreatePost = () => {
             </div>
           </section>
 
-          <section className="">
+          <section className="mt-4 lg:mt-0">
             <div className="relative border w-[400px] h-[300px] ">
               {/* <Input type="text" name="title" placeholder="Enter your post title" /> */}
 
